@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontrolli i Numrit</title>
+  <style>
+    *{
+        text-align: center;
+        background-color: bisque;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        var emri = prompt("Si quheni ju?")
+        var persh = "Pershendetje " + emri+ "!";
+        document.writeln(persh)
+    </script>
+  <script>
+    let numri = parseFloat(prompt("Shtypni nje numer:")) 
+    if (numri > 0) {
+      document.write("Numri është POZITIV.");
+    } else if (numri < 0) {
+      document.write("Numri është NEGATIV.");
+    } else {
+      document.write("Numri është neutral (zero).");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tema: e Lirë</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f3f3;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tema: e Lirë</h1>
+    <p>
+      "E lirë" do të thotë që ju keni lirinë për të shprehur çfarë të dëshironi në këtë faqe. Mund të përdorni JavaScript për të ndryshuar përmbajtjen e saj.
+    </p>
+    <p id="content">
+      Këtu do të shfaqet përmbajtja e lirë.
+    </p>
+    <button id="changeContent">Ndrysho përmbajtjen</button>
+  </div>
+
+  <script>
+    document.getElementById("changeContent").addEventListener("click", function() {
+      document.getElementById("content").textContent = "Unë jam një shembull i përmbajtjes të lirë që ju mund ta ndryshoni!";
+    });
+  </script>
+</body>
+</html>

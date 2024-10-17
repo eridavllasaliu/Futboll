@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menaxhimi i librave</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f3f3f3;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Menaxhimi i librave</h2>
+
+    <script>
+      let libraria = [];
+
+      libraria.push("Shkenca e Kompjuterit");
+      libraria.push("Historia e Shqipërisë");
+      libraria.push("Romani i Trojeve");
+
+      document.write("<p>Lista e librave: " + libraria + "</p>");
+
+      let libriFundi = libraria.pop();
+      document.write("<p>Libri i fundit është: " + libriFundi + "</p>");
+      document.write("<p>Lista e librave pas heqjes së librit të fundit: " + libraria + "</p>");
+
+      libraria.push("Filozofia e Jetës");
+      document.write("<p>Lista e librave pas shtimit të një libri të ri: " + libraria + "</p>");
+    </script>
+  </div>
+</body>
+</html>
